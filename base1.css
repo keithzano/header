@@ -1,0 +1,127 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	box-sizing: border-box;
+	overflow: hidden;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 60px;
+	background: #1c1b1b;
+}
+body li{
+	list-style: none;
+}
+body a{
+	text-decoration: none;
+	color: white;
+}
+
+.nav > ul{
+	display: flex;
+	margin-left: 40px;
+}
+
+.nav > ul > li{
+	margin: 10px;
+
+}
+.main-item > a{
+	margin: 10px 0 0 40px;
+	padding: 0 0 0 0px;
+	text-align: center;
+}
+.main-item{
+	display: flex;
+}
+.sub_menu h4,.sub_menu h4 a{
+	margin: 10px 0 10px 0;
+	color: black;
+}
+.sub_menu ul li a{
+	color: grey;
+}
+.menu-area{
+	margin-bottom: 50px;
+	line-height: 1.5em;
+}
+
+.sub_menu{
+	background:  #f8f9f9;
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	justify-content: space-around;
+	width: 100%;
+	padding: ;
+	visibility: hidden;
+	transition: visibility 0.5s, opacity 0.5s linear;
+	opacity: 0;
+}
+
+.main-item:hover .sub_menu{
+	visibility: visible;
+	opacity: 1;
+	
+}
+.main-item:hover {
+	color: red;
+	display: inline;
+	
+}
+.svg{
+	color: red;
+}
+
+input[name='search']{
+	padding-left: 30px;
+	border: 1px solid #6c6968;
+	border-radius: 3px;
+	background-color: #1c1b1b;
+	color: white;
+	width: 200px;
+	height: 35px;
+}
+.svg-ul{
+	margin: 0 10px 10px 0;
+	padding: 0;
+}
+
+label {
+  position: relative;
+}
+
+label > .icon {
+  position: absolute;
+  top: 180%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: silver;
+}
+
+label > input {
+  padding-left: calc(1em + 10px + 8px); /* icon width + icon padding-left + desired separation*/
+  height: 2em;
+}
+
+/*
+  SVG SpriteSheet
+*/
+
+.spritesheet {
+  display: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
